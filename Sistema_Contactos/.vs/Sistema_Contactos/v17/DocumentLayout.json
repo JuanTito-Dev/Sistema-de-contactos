@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|c:\\users\\hp\\onedrive\\escritorio\\github\\hola\\sistema-de-contactos\\sistema_contactos\\sistema_contactos\\views\\registro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|solutionrelative:sistema_contactos\\views\\registro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|c:\\users\\hp\\onedrive\\escritorio\\github\\hola\\sistema-de-contactos\\sistema_contactos\\sistema_contactos\\models\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|solutionrelative:sistema_contactos\\models\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|c:\\users\\hp\\onedrive\\escritorio\\github\\hola\\sistema-de-contactos\\sistema_contactos\\sistema_contactos\\views\\registro\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|solutionrelative:sistema_contactos\\views\\registro\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|c:\\users\\hp\\onedrive\\escritorio\\github\\hola\\sistema-de-contactos\\sistema_contactos\\sistema_contactos\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|solutionrelative:sistema_contactos\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|c:\\users\\hp\\onedrive\\escritorio\\github\\hola\\sistema-de-contactos\\sistema_contactos\\sistema_contactos\\views\\registro\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26DB6A3E-50EF-4DBD-BE1E-CE4AA297FF72}|Sistema_Contactos\\Sistema_Contactos.csproj|solutionrelative:sistema_contactos\\views\\registro\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Views\\Registro\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Sistema_Contactos\\Views\\Registro\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Views\\Registro\\Editar.cshtml",
+              "RelativeToolTip": "Sistema_Contactos\\Views\\Registro\\Editar.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwCsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T23:22:52.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Views\\Registro\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema_Contactos\\Views\\Registro\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Views\\Registro\\Index.cshtml",
+              "RelativeToolTip": "Sistema_Contactos\\Views\\Registro\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T23:05:37.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Views\\Registro\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Sistema_Contactos\\Views\\Registro\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Views\\Registro\\Crear.cshtml",
+              "RelativeToolTip": "Sistema_Contactos\\Views\\Registro\\Crear.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T23:04:11.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistroController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Controllers\\RegistroController.cs",
+              "RelativeDocumentMoniker": "Sistema_Contactos\\Controllers\\RegistroController.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Controllers\\RegistroController.cs",
+              "RelativeToolTip": "Sistema_Contactos\\Controllers\\RegistroController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAADwv1oAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T22:05:31.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registro.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Models\\Registro.cs",
+              "RelativeDocumentMoniker": "Sistema_Contactos\\Models\\Registro.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive\\Escritorio\\Github\\hola\\Sistema-de-contactos\\Sistema_Contactos\\Sistema_Contactos\\Models\\Registro.cs",
+              "RelativeToolTip": "Sistema_Contactos\\Models\\Registro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T13:26:44.96Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
