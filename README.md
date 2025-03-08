@@ -4,7 +4,7 @@
 
 ## Descripción
 
-Este proyecto es un **Sistema de Contactos y actividades** desarrollado en **ASP.NET Core** con una base de datos **MongoDB**. Permite gestionar contactos y actividades, ofreciendo funcionalidades:
+Este es un proyecto universitario de un **Sistema de Contactos y actividades** desarrollado en **ASP.NET Core** con una base de datos **MongoDB**. Con fines de aprendisaje. Permite gestionar contactos y actividades, ofreciendo funcionalidades:
 
 ### Contactos
 - **Crear contacto**: Añade un contacto con nombre, número de celular y una foto (opcional).
@@ -52,7 +52,9 @@ Antes de usar esta aplicación, sigue estos pasos para configurar la base de dat
 - Abre **MongoDB Compass** o tu cliente de MongoDB preferido.
 - Crea una nueva base de datos con el nombre que desees (por ejemplo, `SistemaDeContactos`).
 - Luego abre el archivo Sistema_Contactos.sin
+
 ![alt text](image.png)
+
 Se abrira Visual studio y podras preciar el codigo.
 
 **Modificaciones permitidas**:
@@ -63,12 +65,15 @@ Antes de correr o ejecutar la aplicacion web debes de hacer unas moficaciones al
 - No modifiques otras partes del código sin autorización explícita.
 
 ## Ejecuta el programa
+
 ![alt text](image-3.png)
+
 con el boton verde.
 
 ## Notas
 - Si no ejecuta revisa que la conexion a la base de datos no tenga ningun error.
 si todo sale bien te saldra esto.
+
 ![alt text](image-4.png)
 
 ## Capturas de Pantalla
