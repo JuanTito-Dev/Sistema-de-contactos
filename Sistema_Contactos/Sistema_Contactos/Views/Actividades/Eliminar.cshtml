@@ -1,0 +1,45 @@
+﻿@model Proyecto_Bb_2.Models.RegistroAc
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="~/css/site.css" as="style" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preload" href="~/css/Ac_Index.css" as="style" />
+    <link rel="stylesheet" href="~/css/Ac_Index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Borrar actividad</title>
+</head>
+<body>
+    <header>
+        <h2 class="Titulo">Eliminar actividad</h2>
+    </header>
+    <main>
+        <section class="contenedor2">
+            <h3 class="from_titulo">@Model.Titulo</h3>
+            <div class="from_campos">
+                <div class="from_preguntas">
+                    <p class="from_preguntas-titulos">Fecha de creacion:</p>
+                    <p class="colortexto">@Model.Fecha_creacion.ToLocalTime().ToString("dd/MM/yyyy HH:mm:ss")</p>
+                </div>
+                <div>
+                    <p class="from_preguntas-titulos">Fecha de actividad:</p>
+                    <p class="colortexto">@Model.Fecha</p>
+                </div>
+                <div class="from_preguntas column">
+                    <p class="from_preguntas-titulos">Descripción:</p>
+                    <p class="colortexto">@Model.Descripcion</p>
+                </div>
+            </div>
+            <p class="Aviso">¿Seguro que quieres borrar esta actividad?</p>
+            <form class="Actividad_Botones" asp-action="Borrar" method="post" asp-route-id="@Model.Id">
+                <button class="Boton" type="Submit">Borrar</button>
+                <a class="Boton" asp-action="Index">Cancelar</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

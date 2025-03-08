@@ -1,0 +1,56 @@
+﻿@{
+
+}
+@model Proyecto_Bb_2.Models.RegistroAc
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="~/css/site.css" as="style" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preload" href="~/css/Ac_Index.css" as="style" />
+    <link rel="stylesheet" href="~/css/Ac_Index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Crear Actividad</title>
+    </head>
+    <body>
+        <header >
+            <h2 class="Titulo">Crear nueva actividad</h2>
+        </header>
+        <main>
+        <form class="contenedor2" method="post" asp-action="Crear">
+                <fieldset>
+                    <legend class="from_titulo">LLena este formulario para crear una nueva actividad</legend>
+                    <div class="from_campos">
+                        <div class="from_preguntas">
+                            <label class="from_preguntas-titulos" asp-for="Titulo">Titulo</label>
+                            <input class="from_preguntas-campos" type="text" asp-for="Titulo" placeholder="Titulo de la actividad" />
+                            <span asp-validation-for="Titulo"></span>
+                        </div>
+                        <div class="from_preguntas">
+                            <label class="from_preguntas-titulos" asp-for="Fecha">Fecha de la actividad</label>
+                            <input class="from_preguntas-campos" type="datetime-local" asp-for="Fecha" required />
+                            <span asp-validation-for="Fecha"></span>
+                        </div>
+                        <div class="from_preguntas column">
+                            <label class="from_preguntas-titulos" asp-for="Descripcion">Descripcion</label>
+                            <textarea cols="20" class="from_textarea from_preguntas-campos" asp-for="Descripcion" placeholder="Agrega una descripcion"></textarea>
+                            <span  asp-validation-for="Descripcion"></span>
+                        </div>
+                        <div >
+                            <label class="from_preguntas-titulos" asp-for="Notificacion">Notificación</label>
+                            <input class="notificacion" type="checkbox" asp-for="Notificacion" />
+                        </div>
+                    </div>
+                    <label  class="colortexto">Al activar la notificacion el sistema de informara cuando tu actividad este cerca</label>
+                    <div class="end">
+                        <button class="Boton " type="submit">Guardar actividad</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

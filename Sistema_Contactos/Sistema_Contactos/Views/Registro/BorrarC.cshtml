@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "BorrarC";
+}
+@model Proyecto_Bb_2.Models.Registro
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" href="~/css/site.css" as="style"/>
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="preload" href="~/css/Con_Index" as="style" />
+        <link rel="stylesheet" href="~/css/Con_Index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Borrar contacto</title>
+    </head>
+    <body>
+        <header>
+        <h2 class="Titulo">Borrar contacto</h2>
+        </header>
+    <main>
+        <h3 class="Subtitulo Sub">¿Seguro que quieres borrar el contacto?</h3>
+            |<div class="contenedor Contacto">
+                <div class="Contacto_Imagen_botones">
+                    <img class="Imagen" src="@Model.Foto" alt="Foto de contacto" />
+                    <form asp-action="Borrar" method="post" asp-route-id="@Model.Id">
+                        <button class="Boton margin-right" type="Submit">Borrar</button>
+                        <a class="Boton margin-left" asp-action="Index">Cancelar</a>
+                    </form>
+                    
+                </div>
+                <div class="Dividir_datos">
+                    <div class="Titulo_datos">
+                        <h3>Datos</h3>
+                    </div>
+                    <div class="Contacto_Datos">
+                        <p class="Contacto_p">Nombre: <span class="Contacto_p_span">@Model.Name</span></p>
+                        <p class="Contacto_p">Edad: <span class="Contacto_p_span">@Model.Edad</span></p>
+                        <p class="Contacto_p">
+                            Celular: <span class="Contacto_p_span">@Model.Celular</span>
+                        </p>
+                        <p class="Contacto_p">Correo: <span class="Contacto_p_span" span>@Model.Correo</span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

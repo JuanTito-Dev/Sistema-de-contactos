@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData  ["Title"] = "Crear";
+}
+
+@model Proyecto_Bb_2.Models.Registro
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="~/css/site.css" as="style"/>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preload" href="~/css/Con_Index" as="style" />
+    <link rel="stylesheet" href="~/css/Con_Index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Registro de Contactos</title>
+</head>
+<body>
+    <header>
+        <h2 class="Titulo">Crear nuevo contacto</h2>
+    </header>
+    <main>
+        <form class="contendorFrom" method="post" aps-action="Crear" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Llena este formulario para crear el nuevo contacto</legend>
+                <div class="form_preguntas">
+                    <div class="form_pregunta">
+                        <label asp-for="Name">Nombre </label>
+                        <input class="campo_pregunta" type="text" asp-for="Name" placeholder="Nombre" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="form_pregunta">
+                        <label asp-for="Edad">Edad</label>
+                        <input class="campo_pregunta" type="number" asp-for="Edad" placeholder="Edad" />
+                        <span asp-validation-for="Edad"></span>
+                    </div>
+                    <div class="form_pregunta">
+                        <label asp-for="Celular">Celular</label>
+                        <input class="campo_pregunta" type="tel" asp-for="Celular" placeholder="Numero de celular" />
+                        <span asp-validation-for="Celular"></span>
+                    </div>
+                    <div class="form_pregunta">
+                        <label asp-for="Correo">Correo</label>
+                        <input class="campo_pregunta" asp-for="Correo" type="email" name="correo" placeholder="Email" />
+                        <span asp-validation-for="Correo"></span>
+                    </div>
+                    <div class="form_pregunta">
+                        <label>Foto</label>
+                        <input class="input_file" type="file" name="Foto" accept="image/*" />
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form_boton">
+                <button class="Boton margin-right" type="submit">Guardar contacto</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

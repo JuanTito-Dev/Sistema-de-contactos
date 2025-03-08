@@ -1,0 +1,50 @@
+﻿@model List<Proyecto_Bb_2.Models.RegistroAc>
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" href="~/css/site.css" as="style" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="preload" href="~/css/Ac_Index.css" as="style" />
+        <link rel="stylesheet" href="~/css/Ac_Index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Registro de actividades</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="Titulo">Registro de actividades</h1>
+        </header>
+        <div class="Subtitulo">
+            <div class="Sub contenedor">
+                <h2>Lista de actividades</h2>
+                <a class="Boton" asp-action="Crear">Crear nueva actividad</a>
+            </div>
+            
+        </div>
+        <main class="Dividir contenedor">
+        @foreach(var actividad in Model)
+        {
+            <div class="Actividad">
+                <div class="Actividad_datos">
+                    <h3 class="Actividad_datos-titulo">@actividad.Titulo</h3>
+                    <p class="Actividad_datos_titulos">Fecha de creación:</p>
+                    <p class="Actividad_datos_textos">@actividad.Fecha_creacion.ToLocalTime().ToString("dd/MM/yyyy HH:mm:ss")</p>
+                    <p class="Actividad_datos_titulos">Fecha de la actividad: </p>
+                    <p class="Actividad_datos_textos">@actividad.Fecha</p>
+                    <p class="Actividad_datos_titulos">Descripcion:</p>
+                    <p class="Actividad_datos_textos">@actividad.Descripcion</p>
+                    <p class="Actividad_datos_titulos">Alertar Actividad: @(actividad.Notificacion ? "Si" : "No")</p>
+                </div>
+                <div class="Actividad_Botones">
+                    <a class="Boton" asp-action="Editar" asp-route-id="@actividad.Id">Editar</a>
+                    <a class="Boton" asp-action="Eliminar" asp-route-id="@actividad.Id">Eliminar</a>
+                </div>
+            </div>
+        }
+        </main>
+    </body>
+</html>

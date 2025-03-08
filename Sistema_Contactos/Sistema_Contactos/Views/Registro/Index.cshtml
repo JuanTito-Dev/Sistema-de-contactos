@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+@model List<Proyecto_Bb_2.Models.Registro>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="~/css/site.css" as="style"/>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preload" href="~/css/Con_Index" as="style" />
+    <link rel="stylesheet" href="~/css/Con_Index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Registro de Contactos</title>
+</head>
+<body>
+    <header>
+        <h1 class="Titulo" >Sistema de registro de contactos</h1>
+    </header>
+    <div class="Subtitulo">
+        <div class="contenedor Subtitulo_titulos">
+            <h2>Lista de contactos</h2>
+            <a class="Boton" asp-action="Crear">Crear</a>
+        </div>
+    </div>
+    <main>
+        @foreach(var registro in Model)
+        {
+            <div class="contenedor Contacto">
+                <div class="Contacto_Imagen_botones">
+                    <img class="Imagen" src="@registro.Foto" alt="Foto de contacto" />
+                    <div >
+                        <a class="Boton margin-right" asp-action="Editar" asp-route-id="@registro.Id">Editar</a>
+                        <a class="Boton margin-left" asp-action="BorrarC" asp-route-id="@registro.Id">Eliminar</a>
+                    </div>
+                </div>
+                <div class="Dividir_datos">
+                    <div class="Titulo_datos">
+                        <h3>Datos</h3>
+                    </div>
+                    <div class="Contacto_Datos">
+                        <p class="Contacto_p">Nombre: <span class="Contacto_p_span">@registro.Name</span></p>
+                        <p class="Contacto_p">Edad: <span class="Contacto_p_span">@registro.Edad</span></p>
+                        <p class="Contacto_p">
+                            Celular: <span class="Contacto_p_span">@registro.Celular</span> <a class="Boton margin-left" href="https://wa.me/591@(registro.Celular)" target="_blank">Contactar</a>
+                        </p>
+                        <p class="Contacto_p">Correo: <span class="Contacto_p_span" span>@registro.Correo</span> <a class="Boton margin-left" href="mailto:@(registro.Correo)">Contactar</a> </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </main>
+</body>
+</html>
