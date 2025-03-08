@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Sistema_Contactos.props" />
-</Project>
