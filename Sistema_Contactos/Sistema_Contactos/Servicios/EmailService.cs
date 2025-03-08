@@ -14,11 +14,11 @@ namespace Proyecto_Bb_2.Servicios
         {
             _emailConfig = _email.Value;
         }
-        public async Task EnviarEmail(string asunto, string cuerpo)
+        public async Task EnviarEmail(string asunto, string cuerpo, string? correo)
         {
             var email = new MimeMessage();
             email.From.Add(MailboxAddress.Parse(_emailConfig.FromEmail));
-            email.To.Add(MailboxAddress.Parse("juan.tito.dev@gmail.com"));
+            email.To.Add(MailboxAddress.Parse(correo));
             email.Subject = asunto;
             email.Body = new TextPart("html") { Text = cuerpo };
 

@@ -31,7 +31,7 @@ namespace Proyecto_Bb_2.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Crear([Bind("Titulo","Fecha", "Descripcion", "Notificacion")] RegistroAc actividad)
+        public async Task<IActionResult> Crear([Bind("Titulo","Fecha", "Descripcion", "Notificacion", "Correo")] RegistroAc actividad)
         {
             actividad.Fecha_creacion = DateTime.Now;
             actividad.Id = ObjectId.GenerateNewId().ToString();
@@ -62,7 +62,7 @@ namespace Proyecto_Bb_2.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Editar(string Id, [Bind("Id","Titulo","Fecha","Descripcion","Notificacion")] RegistroAc registro)
+        public async Task<IActionResult> Editar(string Id, [Bind("Id","Titulo","Fecha","Descripcion","Notificacion","Correo")] RegistroAc registro)
         {
             if (Id == null)
             {

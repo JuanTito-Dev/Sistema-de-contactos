@@ -52,7 +52,7 @@ fieldset {
     margin-bottom:3rem;
 }
 .contenedor{
-    max-width: 120rem;
+    max-width: 128rem;
     min-width: 50rem;
     margin: 0 auto;
 }
@@ -65,7 +65,7 @@ fieldset {
     max-width: 60rem;
     margin: 0 auto;
     margin-top: 2rem;
-    height: 50rem;
+    height: 60rem;
     position: relative;
 }
 
@@ -150,7 +150,7 @@ header {
 /*Crear*/
 .from_titulo {
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--BtnNF);
     text-align:center;
     margin-bottom: 3rem;
@@ -160,6 +160,7 @@ header {
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap: 2rem;
+    margin-bottom:2rem;
 }
 .from_preguntas {
     display: flex;
@@ -173,7 +174,7 @@ header {
 .from_preguntas-campos{
     border-radius:.5rem;
     border: .3rem solid var(--detales);
-    height:3rem;
+    height:2rem;
 }
 .from_textarea {
     border-radius: .5rem;
@@ -186,6 +187,7 @@ header {
     height:2rem;
     width:2rem;
 }
+
 /*Eliminar*/
 .Aviso{
     color:var(--detalles2);

@@ -53,6 +53,11 @@ namespace Proyecto_Bb_2.Servicios
             {
                 if (tiempo_restante.TotalMinutes <= 60 && tiempo_restante.TotalMinutes > 30 && actividad.P_Noti)
                 {
+                    if (actividad.Correo is null)
+                    {
+                        Console.WriteLine($"La actividad: {actividad.Titulo} no tienen correo electronico");
+                        return;
+                    }
                     await _emailService.EnviarEmail(
                         $"Recodatorio: {actividad.Titulo} empezará en menos de una hora",
                         $"<h2>{actividad.Titulo}</h2>" +
@@ -63,13 +68,18 @@ namespace Proyecto_Bb_2.Servicios
                         $"<p>Fecha de la actividad: {actividad.Fecha}</p>" +
                         $"<p>Asegúrese de estar preparado para esta actividad. " +
                         $"Si necesitas reprogramarla puedes hacer en la Aplicacion</p>" +
-                        $"<p>Atentamente: Tu sistema</p>");
+                        $"<p>Atentamente: Tu sistema</p>", actividad.Correo);
                     Console.WriteLine($"{actividad.Titulo}: Primera notificacion enviada");
                     var update = Builders<RegistroAc>.Update.Set(a => a.P_Noti, false);
                     await _actividades.UpdateOneAsync(buscar, update);
                 }
                 else if (tiempo_restante.TotalMinutes <= 30 && tiempo_restante.TotalMinutes > 0 && actividad.S_Noti)
                 {
+                    if (actividad.Correo is null)
+                    {
+                        Console.WriteLine($"La actividad: {actividad.Titulo} no tienen correo electronico");
+                        return;
+                    }
                     await _emailService.EnviarEmail(
                         $"Recodatorio: {actividad.Titulo} empezará en menos de media hora",
                         $"<h2>{actividad.Titulo}</h2>" +
@@ -80,13 +90,18 @@ namespace Proyecto_Bb_2.Servicios
                         $"<p>Fecha de la actividad: {actividad.Fecha}</p>" +
                         $"<p>Asegúrese de estar preparado para esta actividad. " +
                         $"Si necesitas reprogramarla puedes hacer en la Aplicacion</p>" +
-                        $"<p>Atentamente: Tu sistema</p>");
+                        $"<p>Atentamente: Tu sistema</p>", actividad.Correo);
                     Console.WriteLine($"{actividad.Titulo}: Segunda notificacion enviada");
                     var update = Builders<RegistroAc>.Update.Set(a => a.S_Noti, false);
                     await _actividades.UpdateOneAsync(buscar, update);
                 }
                 else if (tiempo_restante.TotalMinutes <= 10 && tiempo_restante.TotalMinutes > 0 && actividad.T_Noti)
                 {
+                    if (actividad.Correo is null)
+                    {
+                        Console.WriteLine($"La actividad: {actividad.Titulo} no tienen correo electronico");
+                        return;
+                    }
                     await _emailService.EnviarEmail(
                         $"Recodatorio: {actividad.Titulo} empezará en menos de diez minutos",
                         $"<h2>{actividad.Titulo}</h2>" +
@@ -97,14 +112,18 @@ namespace Proyecto_Bb_2.Servicios
                         $"<p>Fecha de la actividad: {actividad.Fecha}</p>" +
                         $"<p>Asegúrese de estar preparado para esta actividad. " +
                         $"Si necesitas reprogramarla puedes hacer en la Aplicacion</p>" +
-                        $"<p>Atentamente: Tu sistema</p>");
+                        $"<p>Atentamente: Tu sistema</p>", actividad.Correo);
                     Console.WriteLine($"{actividad.Titulo}: Tercera notificacion enviada");
                     var update = Builders<RegistroAc>.Update.Set(a => a.T_Noti, false);
                     await _actividades.UpdateOneAsync(buscar, update);
                 }
                 else if (tiempo_restante.TotalMinutes <= 0 && tiempo_restante.TotalMinutes >-60 && actividad.C_Noti)
                 {
-
+                    if (actividad.Correo is null)
+                    {
+                        Console.WriteLine($"La actividad: {actividad.Titulo} no tienen correo electronico");
+                        return;
+                    }
                     await _emailService.EnviarEmail(
                         $"Recodatorio: {actividad.Titulo} acaba de comenzar",
                         $"<h2>{actividad.Titulo}</h2>" +
@@ -115,7 +134,7 @@ namespace Proyecto_Bb_2.Servicios
                         $"<p>Fecha de la actividad: {actividad.Fecha}</p>" +
                         $"<p>Asegúrese de estar preparado para esta actividad. " +
                         $"Si necesitas reprogramarla puedes hacer en la Aplicacion</p>" +
-                        $"<p>Atentamente: Tu sistema</p>");
+                        $"<p>Atentamente: Tu sistema</p>", actividad.Correo);
                     Console.WriteLine($"Cuarta notificacion enviada notificacion enviada de la actividad {actividad.Titulo}");
                     var update = Builders<RegistroAc>.Update.Set(a => a.C_Noti, false);
                     await _actividades.UpdateOneAsync(buscar, update);
@@ -133,7 +152,7 @@ namespace Proyecto_Bb_2.Servicios
                         $"<p>Fecha de la actividad: {actividad.Fecha}</p>" +
                         $"<p>Asegúrese de estar preparado para esta actividad. " +
                         $"Si necesitas reprogramarla puedes hacer en la Aplicacion</p>" +
-                        $"<p>Atentamente: Tu sistema</p>");
+                        $"<p>Atentamente: Tu sistema</p>",actividad.Correo);
                     Console.WriteLine($"{actividad.Titulo} se acaba de eliminar y se envio la ultima notificacion");
                 }
             }

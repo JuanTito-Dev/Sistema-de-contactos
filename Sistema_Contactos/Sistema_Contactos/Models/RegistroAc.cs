@@ -13,6 +13,8 @@ namespace Proyecto_Bb_2.Models
         public string? Descripcion { get; set; }
         public bool Notificacion { get; set; } = false;
 
+        public string? Correo { get; set; }
+
         public bool P_Noti = true;
         public bool S_Noti = true;
         public bool T_Noti = true;

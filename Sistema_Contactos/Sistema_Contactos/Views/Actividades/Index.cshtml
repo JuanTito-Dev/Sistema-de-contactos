@@ -38,6 +38,8 @@
                     <p class="Actividad_datos_titulos">Descripcion:</p>
                     <p class="Actividad_datos_textos">@actividad.Descripcion</p>
                     <p class="Actividad_datos_titulos">Alertar Actividad: @(actividad.Notificacion ? "Si" : "No")</p>
+                    <p class="Actividad_datos_titulos">Correo que recibira la notificación:</p>
+                    <p class="Actividad_datos_textos">@actividad.Correo</p>
                 </div>
                 <div class="Actividad_Botones">
                     <a class="Boton" asp-action="Editar" asp-route-id="@actividad.Id">Editar</a>
