@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Sistema_Contactos.props" />
-</Project>
